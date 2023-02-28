@@ -1,0 +1,35 @@
+ASP.NET 
+Multiplataforma - Open source
+Un framework para crear aplicaciones y servicios web con .NET Y C#
+
+1 INSTALAR .NET
+2 DESCARGAR EL SDK DE .NET 7 (64 BITS)
+3 CONPROBAR CON EL COMANDO     dotnet
+4 ECJECUTAR EL COMANDO PARA CREAR LA APLICACION
+dotnet new webapp -o MyWebApp --no-https -f net7.0
+
+¿Qué significa este comando?
+El comando dotnet new crea una nueva aplicación.
+
+El parámetro webApp selecciona qué plantilla usar al crear la aplicación.
+El parámetro -o crea un directorio llamado MyWebApp donde se almacena su aplicación.
+La marca --no-https especifica que no se debe habilitar HTTPS.
+El parámetro -f indica que está creando una aplicación .NET 7.
+
+¿Qué archivos se crearon?
+Se crearon varios archivos en el directorio MyWebApp para proporcionarle una aplicación web simple que está lista para ejecutarse.
+
+Program.cs contiene el código de inicio de la app y la configuración del middleware.
+El directorio Pages contiene algunas páginas web de ejemplo para la aplicación.
+MyWebApp.csproj define algunas configuraciones del proyecto, como por ejemplo, la versión del SDK de .NET a la que se dirige.
+El archivo launchSettings.json dentro del directorio Properties define diferentes configuraciones de perfil para el entorno de desarrollo local. Un número de puerto que oscila entre 5 000 y 5 300 se asigna automáticamente al crear el proyecto y se guarda en este archivo.
+Seleccione el botón Continuar para ir al siguiente paso.
+
+5 EJECUTAR LA APLICACION
+- cd MyWebApp
+- dotnet watch
+
+El comando dotnet watch compilará e iniciará la aplicación, y luego actualizará la aplicación en ejecución cada vez que realice cambios en el código. Puede detener la aplicación en cualquier momento seleccionando Ctrl+C.
+
+6 Editar el código
+Abra el archivo Index.cshtml ubicado en el directorio Pages en cualquier editor de texto.
